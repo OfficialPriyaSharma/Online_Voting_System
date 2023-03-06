@@ -28,6 +28,11 @@ public class VotingSystem extends JFrame {
         l3.setBounds(700,200,500,300);
         add(l3);
 
+        JButton b1 = new JButton("Next");
+        b1.setFont(new Font("Tahoma",Font.PLAIN,20));
+        b1.setBounds(250,500,300,80);
+        add(b1);
+
         setLayout(null);
         setVisible(true);
     }
