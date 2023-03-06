@@ -34,6 +34,27 @@ public class Vote extends JFrame {
         l4.setBounds(50,350,300,200);
         add(l4);
 
+        JButton b1 = new JButton("Vote");
+        b1.setBounds(120,260,150,50);
+        add(b1);
+
+        JButton b2 = new JButton("Vote");
+        b2.setBounds(860,260,150,50);
+        add(b2);
+
+        JButton b3 = new JButton("Vote");
+        b3.setBounds(120,560,150,50);
+        add(b3);
+
+        JButton b4 = new JButton("Vote");
+        b4.setBounds(120,260,150,50);
+        add(b4);
+
+        JButton b5 = new JButton("Vote");
+        b5.setBounds(860,560,150,50);
+        add(b5);
+
+
         setBounds(0,0,1600,700);
 //        getContentPane().setBackground(Color.WHITE);
         setLayout(null);
