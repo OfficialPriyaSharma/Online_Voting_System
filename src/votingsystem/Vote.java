@@ -20,6 +20,20 @@ public class Vote extends JFrame {
         l2.setBounds(800,50,400,300);
         add(l2);
 
+        ImageIcon i7 = new ImageIcon(ClassLoader.getSystemResource("votingsystem/icons/BJP.png"));
+        Image i8 = i7.getImage().getScaledInstance(400,300,Image.SCALE_DEFAULT);
+        ImageIcon i9 = new ImageIcon(i8);
+        JLabel l3 = new JLabel(i9);
+        l3.setBounds(800,350,400,300);
+        add(l3);
+
+        ImageIcon i10 = new ImageIcon(ClassLoader.getSystemResource("votingsystem/icons/Congress.png"));
+        Image i11 = i10.getImage().getScaledInstance(400,300,Image.SCALE_DEFAULT);
+        ImageIcon i12 = new ImageIcon(i11);
+        JLabel l4 = new JLabel(i12);
+        l4.setBounds(50,350,400,300);
+        add(l4);
+
         setBounds(0,0,1600,700);
 //        getContentPane().setBackground(Color.WHITE);
         setLayout(null);
