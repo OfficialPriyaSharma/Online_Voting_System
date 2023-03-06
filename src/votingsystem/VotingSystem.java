@@ -21,7 +21,7 @@ public class VotingSystem extends JFrame {
         l2.setBounds(50,300,700,100);
         add(l2);
 
-        ImageIcon il = new ImageIcon(ClassLoader.getSystemResource("C:\\Users\\Administrator\\Documents\\Online Voting System\\icons\\Vote.png"));
+        ImageIcon il = new ImageIcon(ClassLoader.getSystemResource("votingsystem/icons/Vote.png"));
         Image i2 = il.getImage().getScaledInstance(500,300,Image.SCALE_DEFAULT);
         ImageIcon i3 = new ImageIcon(i2);
         JLabel l3 = new JLabel(i3);
