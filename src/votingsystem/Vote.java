@@ -2,8 +2,10 @@ package votingsystem;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-public class Vote extends JFrame {
+public class Vote extends JFrame implements ActionListener {
 
     Vote(){
         ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("votingsystem/icons/Shivsena.png"));
@@ -46,8 +48,8 @@ public class Vote extends JFrame {
         b3.setBounds(120,560,150,50);
         add(b3);
 
-        JButton b4 = new JButton("Vote");
-        b4.setBounds(120,260,150,50);
+        JButton b4 = new JButton("Result");
+        b4.setBounds(500,260,150,50);
         add(b4);
 
         JButton b5 = new JButton("Vote");
@@ -62,5 +64,10 @@ public class Vote extends JFrame {
     }
     public static void main(String[] args) {
             new Vote();
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+
     }
 }
