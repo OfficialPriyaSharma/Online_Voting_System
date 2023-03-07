@@ -6,6 +6,8 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Vote extends JFrame implements ActionListener {
+    JButton b1,b2,b3,b4,b5;
+    int a,b,c,d;
 
     Vote(){
         ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("votingsystem/icons/Shivsena.png"));
@@ -36,23 +38,28 @@ public class Vote extends JFrame implements ActionListener {
         l4.setBounds(50,350,300,200);
         add(l4);
 
-        JButton b1 = new JButton("Vote");
+        b1 = new JButton("Vote");
+        b1.addActionListener(this);
         b1.setBounds(120,260,150,50);
         add(b1);
 
-        JButton b2 = new JButton("Vote");
+        b2 = new JButton("Vote");
+        b2.addActionListener(this);
         b2.setBounds(860,260,150,50);
         add(b2);
 
-        JButton b3 = new JButton("Vote");
+        b3 = new JButton("Vote");
+        b3.addActionListener(this);
         b3.setBounds(120,560,150,50);
         add(b3);
 
-        JButton b4 = new JButton("Result");
+        b4 = new JButton("Result");
+        b4.addActionListener(this);
         b4.setBounds(500,260,150,50);
         add(b4);
 
-        JButton b5 = new JButton("Vote");
+        b5 = new JButton("Vote");
+        b5.addActionListener(this);
         b5.setBounds(860,560,150,50);
         add(b5);
 
@@ -68,6 +75,24 @@ public class Vote extends JFrame implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-
+        if(e.getSource()==b1){
+            a=a+1;
+            JOptionPane.showMessageDialog(null,"Your vote is added to Shivsena");
+        }
+        if(e.getSource()==b2){
+            b=b+1;
+            JOptionPane.showMessageDialog(null,"Your vote is added to Aam Aadmi Party");
+        }
+        if(e.getSource()==b3){
+            c=c+1;
+            JOptionPane.showMessageDialog(null,"Your vote is added to Congress");
+        }
+        if(e.getSource()==b5){
+            d=d+1;
+            JOptionPane.showMessageDialog(null,"Your vote is added to BJP");
+        }
+        if(e.getSource()==b4){
+            JOptionPane.showMessageDialog(null,"Shivsena=" + a + "AamAadmi=" + b +"Congress=" + c + "BJP=" + d);
+        }
     }
 }
