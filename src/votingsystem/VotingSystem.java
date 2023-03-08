@@ -3,9 +3,11 @@ package votingsystem;
 import javax.swing.*;
 
 import java.awt.*;
+import java.awt.event.*;
+import java.awt.event.*;
 
 
-public class VotingSystem extends JFrame {
+public class VotingSystem extends JFrame implements ActionListener {
 
     VotingSystem(){
         setBounds(0,0,1600,700);
@@ -30,6 +32,7 @@ public class VotingSystem extends JFrame {
 
         JButton b1 = new JButton("Next");
         b1.setFont(new Font("Tahoma",Font.PLAIN,20));
+        b1.addActionListener(this);
         b1.setBounds(250,500,300,80);
         add(b1);
 
@@ -40,5 +43,11 @@ public class VotingSystem extends JFrame {
     public static void main(String[] args) {
         new VotingSystem();
 
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        new Vote().setVisible(true);
+        this.setVisible(false);
     }
 }
